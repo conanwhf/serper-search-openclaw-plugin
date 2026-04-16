@@ -1,5 +1,5 @@
 {
-  "name": "@conanwhf/openclaw-serper-provider",
+  "name": "openclaw-serper-provider",
   "version": "1.0.0",
   "type": "module",
   "description": "OpenClaw web search provider plugin using Serper.dev Google Search API",
