@@ -1,0 +1,45 @@
+{
+  "id": "serper",
+  "name": "Serper",
+  "description": "Google Search API via Serper.dev — fast, cheap, structured SERP results",
+  "version": "1.0.0",
+  "providers": ["serper"],
+  "providerAuthEnvVars": {
+    "serper": ["SERPER_API_KEY"]
+  },
+  "contracts": {
+    "webSearchProviders": ["serper"]
+  },
+  "uiHints": {
+    "apiKey": {
+      "label": "API key",
+      "placeholder": "your-serper-api-key",
+      "sensitive": true,
+      "help": "Get your key at https://serper.dev — 2,500 free queries"
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "webSearch": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Serper.dev API key"
+          },
+          "defaultGl": {
+            "type": "string",
+            "description": "Default country code (e.g. sg, us, cn)"
+          },
+          "defaultHl": {
+            "type": "string",
+            "description": "Default language code (e.g. en, zh-CN)"
+          }
+        }
+      }
+    }
+  }
+}

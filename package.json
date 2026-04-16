@@ -1,0 +1,35 @@
+{
+  "name": "@conanwhf/openclaw-serper-provider",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OpenClaw web search provider plugin using Serper.dev Google Search API",
+  "license": "MIT",
+  "main": "index.js",
+  "author": "Conan Wang <conan.whf@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conanwhf/serper-search-openclaw-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/conanwhf/serper-search-openclaw-plugin/issues"
+  },
+  "homepage": "https://github.com/conanwhf/serper-search-openclaw-plugin#readme",
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "serper",
+    "google-search",
+    "web-search",
+    "search-api"
+  ],
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    }
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.49"
+  }
+}
